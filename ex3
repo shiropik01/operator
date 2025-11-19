@@ -1,0 +1,10 @@
+month = int(input("Введите номер меcяца (1-12): "))
+
+if month < 1 or month > 12:
+    print("Ошибка, введите число от 1 до 12")
+elif month == 2:
+    print(28)
+elif month in [4, 6, 9, 11]:
+    print(30)
+else:
+    print(31)
